@@ -1,1 +1,8 @@
-
+FlamParticle: false
+EndermanTeleportParticle: false
+LavaParticle: true
+WaterParticle: false
+InkPrticle: false
+SmokeParticle: false
+HeartParticle: false
+#change false to true to work that particle!
