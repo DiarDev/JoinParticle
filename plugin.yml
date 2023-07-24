@@ -1,4 +1,5 @@
-name: BaorzK
+name: JoinParticle
+author: BaorzK
 api: 5.0.0
 version: 0.0.1
 main: BaorzK\JoinParticle\Main
