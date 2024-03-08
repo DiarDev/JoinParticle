@@ -1,6 +1,6 @@
 <?php
 
-namespace BaorzK\JoinParticle;
+namespace Diar\JoinParticle;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -35,33 +35,33 @@ class Main extends PluginBase implements Listener{
   $y = $player->getLocation()->getY;
   $z = $player->getLocation()->getZ;
   //See if it is true or not!
-  if($this->getConfig->get(FlameParticle) === true){
+  if($this->getConfig->get("FlameParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new FlameParticle(2));
+  $particle = $world->addParticle($position, new FlameParticle());
   }
-  if($this->getConfig->get(LavaParticle) === true){
+  if($this->getConfig->get("LavaParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new LavaParticle(2));
+  $particle = $world->addParticle($position, new LavaParticle());
   }
-  if($this->getConfig->get(AngryVillageParticle) === true){
+  if($this->getConfig->get("AngryVillageParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new AngryVillageParticle(2));
+  $particle = $world->addParticle($position, new AngryVillageParticle());
   }
-  if($this->getConfig->get(InkParticle) === true){
+  if($this->getConfig->get("InkParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new InkParticle(2));
+  $particle = $world->addParticle($position, new InkParticle());
   }
-  if($this->getConfig->get(SmokeParticle) === true){
+  if($this->getConfig->get("SmokeParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new SmokeParticle(2));
+  $particle = $world->addParticle($position, new SmokeParticle());
   }
-  if($this->getConfig->get(WaterParticle) === true){
+  if($this->getConfig->get("WaterParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new WaterParticle(2));
+  $particle = $world->addParticle($position, new WaterParticle());
   }
-  if($this->getConfig->get(EndermanTeleportParticle) === true){
+  if($this->getConfig->get("EndermanTeleportParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
-  $particle = $world->addParticle($position, new EndermanTeleportParticle(2));
+  $particle = $world->addParticle($position, new EndermanTeleportParticle());
   }
 }
 }
