@@ -1,4 +1,4 @@
-<img height="64" weight="64" src="icon.png">
+<img height="256" weight="256" src="icon.png">
 
 # JoinParticle
 A plugin that when you enter the server it will summon the particle!
