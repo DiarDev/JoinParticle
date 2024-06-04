@@ -32,10 +32,7 @@ class Main extends PluginBase implements Listener{
   
   public function onJoin(PlayerJoinEvent $ev){
   $player = $ev->getPlayer();
-  $world = $player->getWorld();
-  $x = $player->getLocation()->getX();
-  $y = $player->getLocation()->getY();
-  $z = $player->getLocation()->getZ();
+  $world = $player->getPosition()->getWorld();
   //See if it is true or not!
   if($this->getConfig()->get("FlameParticle") === true){
   $position = $player->getPosition()->add(0, 0, 0);
