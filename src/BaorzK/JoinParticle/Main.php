@@ -1,6 +1,6 @@
 <?php
 
-namespace Diar\JoinParticle;
+namespace BaorzK\JoinParticle;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
