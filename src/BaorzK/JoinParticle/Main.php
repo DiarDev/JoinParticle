@@ -33,33 +33,27 @@ class Main extends PluginBase implements Listener{
   public function onJoin(PlayerJoinEvent $ev){
   $player = $ev->getPlayer();
   $world = $player->getPosition()->getWorld();
+  $position = $player->getLocation();
   //See if it is true or not!
   if($this->getConfig()->get("FlameParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new FlameParticle());
   }
   if($this->getConfig()->get("LavaParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new LavaParticle());
   }
   if($this->getConfig()->get("AngryVillagerParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new AngryVillagerParticle());
   }
   if($this->getConfig()->get("InkParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new InkParticle());
   }
   if($this->getConfig()->get("SmokeParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new SmokeParticle());
   }
   if($this->getConfig()->get("WaterParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new WaterParticle());
   }
   if($this->getConfig()->get("EndermanTeleportParticle") === true){
-  $position = $player->getPosition()->add(0, 0, 0);
   $particle = $world->addParticle($position, new EndermanTeleportParticle());
   }
 }
