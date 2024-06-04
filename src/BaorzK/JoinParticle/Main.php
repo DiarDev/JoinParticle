@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
   
   public function onJoin(PlayerJoinEvent $ev){
   $player = $ev->getPlayer();
-  $world = $player->getWorldManager()->getWorld();
+  $world = $player->getWorld();
   $x = $player->getLocation()->getX();
   $y = $player->getLocation()->getY();
   $z = $player->getLocation()->getZ();
