@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/DiarDev/JoinParticle
+build-by-default: true
+branches:
+- Main
+projects:
+  JoinParticle:
+    path: ""
+...
